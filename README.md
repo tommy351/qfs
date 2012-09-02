@@ -36,25 +36,25 @@ qfs is partially same with the official file I/O module. Please read the [docume
 
 ###Status
 
-- [stat](#stat)
-- [exists](#exists)
+- [stat](#statcallback)
+- [exists](#existscallback)
 
 ###Query
 
-- [children](#children)
-- [siblings](#siblings)
+- [children](#childrenselector-callback)
+- [siblings](#siblingsselector-callback)
 - [parent](#parent)
 
 ###I/O 
 
-- [mkdir](#mkdir)
-- [write](#write)
-- [read](#read)
-- [content](#content)
-- [append](#append)
-- [rename](#rename)
-- [remove](#remove)
-- [empty](#empty)
+- [mkdir](#mkdirname-callback)
+- [write](#writedata-callback)
+- [read](#readcallback)
+- [content](#contentdata-callback)
+- [append](#appenddata-callback)
+- [rename](#renamename-callback)
+- [remove](#removecallback)
+- [empty](#emptycallback)
 
 ##Status
 
