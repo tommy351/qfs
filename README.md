@@ -32,20 +32,20 @@ qfs(path).stats(function(err, stats){
 
 qfs is partially same with the official file I/O module. Please read the [document](<http://nodejs.org/api/fs.html>) first.
 
-###Contents
+##Contents
 
-####Status
+###Status
 
 - [stat](#stat)
 - [exists](#exists)
 
-####Query
+###Query
 
 - [children](#children)
 - [siblings](#siblings)
 - [parent](#parent)
 
-####I/O 
+###I/O 
 
 - [mkdir](#mkdir)
 - [write](#write)
@@ -56,78 +56,78 @@ qfs is partially same with the official file I/O module. Please read the [docume
 - [remove](#remove)
 - [empty](#empty)
 
-###Status
+##Status
 
-####stat([callback])
+###stat([callback])
 
 Get status of target.
 
 Reference: <http://nodejs.org/api/fs.html#fs_fs_stat_path_callback>
 
-####exists([callback])
+###exists([callback])
 
 Check if target exists.
 
 Reference: <http://nodejs.org/api/fs.html#fs_fs_exists_path_callback>
 
-###Query
+##Query
 
-####children([selector], [callback])
+###children([selector], [callback])
 
 Get children of target directory.
 
 Reference: <http://nodejs.org/api/fs.html#fs_fs_readdir_path_callback>
 
-####siblings([selector], [callback])
+###siblings([selector], [callback])
 
 Get siblings of target.
 
-####parent()
+###parent()
 
 Get parent of target.
 
-###I/O
+##I/O
 
-####mkdir(name, [callback])
+###mkdir(name, [callback])
 
 Create a new directory in target directory.
 
 Reference: <http://nodejs.org/api/fs.html#fs_fs_mkdir_path_mode_callback>
 
-####write(data, [callback])
+###write(data, [callback])
 
 Overwrite target file with `data` if exists, otherwise create a new file with `data`.
 
 Reference: <http://nodejs.org/api/fs.html#fs_fs_writefile_filename_data_encoding_callback>
 
-####read([callback])
+###read([callback])
 
 Read data from target file.
 
 Reference: <http://nodejs.org/api/fs.html#fs_fs_readfile_filename_encoding_callback>
 
-####content([data], [callback])
+###content([data], [callback])
 
 Write `data` to target file if `data` is defined, otherwise read data from it.
 
-####append(data, [callback])
+###append(data, [callback])
 
 Append `data` to target file if exists, otherwise create a new file with `data`.
 
 Reference: <http://nodejs.org/api/fs.html#fs_fs_appendfile_filename_data_encoding_utf8_callback>
 
-####rename(name, [callback])
+###rename(name, [callback])
 
 Rename target with `name`.
 
 Reference: <http://nodejs.org/api/fs.html#fs_fs_rename_oldpath_newpath_callback>
 
-####remove([callback])
+###remove([callback])
 
 Remove target.
 
 Reference: <http://nodejs.org/api/fs.html#fs_fs_unlink_path_callback>
 
-####empty([callback])
+###empty([callback])
 
 Clear everything from target directory.
