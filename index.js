@@ -16,11 +16,11 @@ var _isObject = function(obj){
 };
 
 var _isRegExp = function(obj){
-  return toString.call(obj) == '[object RegExp]';
+  return obj instanceof RegExp;
 };
 
 var _isFunction = function(obj){
-  return toString.call(obj) == '[object Function]';
+  return typeof obj === 'function';
 };
 
 var _toArray = function(obj){
