@@ -1,0 +1,21 @@
+{
+  "name": "qfs",
+  "version": "0.0.1",
+  "description": "File I/O in jQuery way",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tommy351/qfs.git"
+  },
+  "keywords": [
+    "fs",
+    "file",
+    "file",
+    "system"
+  ],
+  "author": "Tommy Chen <tommy351@gmail.com>",
+  "license": "MIT License"
+}
