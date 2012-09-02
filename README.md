@@ -20,10 +20,10 @@ $ git clone git://github.com/tommy351/qfs.git
 
 ```
 // Get the stats synchronously
-qfs(path).stats();
+qfs(path).stat();
 
 // Get the stats asynchronously
-qfs(path).stats(function(err, stats){
+qfs(path).stat(function(err, stats){
 	...
 });
 ```

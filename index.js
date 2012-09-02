@@ -65,9 +65,9 @@ function qfs(path){
 	this.ext = pathFn.extname(path);
 };
 
-qfs.prototype.stats = function(callback){
+qfs.prototype.stat = function(callback){
   if (typeof callback === 'function'){
-    fs.stats(this.path, callback.bind(this));
+    fs.stat(this.path, callback.bind(this));
     return this;
   } else {
     return fs.statSync(this.path);
