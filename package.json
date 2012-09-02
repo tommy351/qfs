@@ -17,5 +17,8 @@
     "system"
   ],
   "author": "Tommy Chen <tommy351@gmail.com>",
-  "license": "MIT License"
+  "license": "MIT License",
+  "dependencies": {
+    "async": ""
+  }
 }
