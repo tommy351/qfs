@@ -1,68 +1,68 @@
 var fs = require('fs'),
-	pathFn = require('path'),
-	async = require('async');
+  pathFn = require('path'),
+  async = require('async');
 
 if (fs.exists === undefined){
-	fs.exists = pathFn.exists;
-	fs.existsSync = pathFn.existsSync;
+  fs.exists = pathFn.exists;
+  fs.existsSync = pathFn.existsSync;
 }
 
 var _isArray = function(obj){
-	return Array.isArray(obj);
+  return Array.isArray(obj);
 };
 
 var _isObject = function(obj){
-	return obj === Object(obj);
+  return obj === Object(obj);
 };
 
 var _isRegExp = function(obj){
-	return toString.call(obj) == '[object RegExp]';
+  return toString.call(obj) == '[object RegExp]';
 };
 
 var _isFunction = function(obj){
-	return toString.call(obj) == '[object Function]';
+  return toString.call(obj) == '[object Function]';
 };
 
 var _toArray = function(obj){
-	return Array.prototype.slice.call(obj);
+  return Array.prototype.slice.call(obj);
 };
 
 var _each = function(obj, callback){
-	if (_isArray(obj)){
-		for (var i=0, len=obj.length; i<len; i++){
-			var _callback = callback(obj[i], i);
-			if (typeof _callback !== 'undefined'){
-				if (_callback){
-					continue;
-				} else {
-					break;
-				}
-			}
-		}
-	} else if (_isObject(obj)){
-		var index = 0;
-		for (var i in obj){
-			var _callback = callback(obj[i], i, index++);
-			if (typeof _callback !== 'undefined'){
-				if (_callback){
-					continue;
-				} else {
-					break;
-				}
-			}
-		}
-	}
+  if (_isArray(obj)){
+    for (var i=0, len=obj.length; i<len; i++){
+      var _callback = callback(obj[i], i);
+      if (typeof _callback !== 'undefined'){
+        if (_callback){
+          continue;
+        } else {
+          break;
+        }
+      }
+    }
+  } else if (_isObject(obj)){
+    var index = 0;
+    for (var i in obj){
+      var _callback = callback(obj[i], i, index++);
+      if (typeof _callback !== 'undefined'){
+        if (_callback){
+          continue;
+        } else {
+          break;
+        }
+      }
+    }
+  }
 };
 
 module.exports = function(path){
-	return new qfs(path);
+  return new qfs(path);
 };
 
 function qfs(path){
-	this.path = path;
-	this.name = pathFn.basename(path);
-	this.dir = pathFn.dirname(path);
-	this.ext = pathFn.extname(path);
+  this.path = path;
+  this.name = pathFn.basename(path);
+  this.dir = pathFn.dirname(path);
+  this.ext = pathFn.extname(path);
 };
 
 qfs.prototype.stat = function(callback){
