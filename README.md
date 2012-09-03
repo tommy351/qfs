@@ -144,13 +144,17 @@ An inverse function of `filter`.
 
 ###each(iterator)
 
+Iterate over the target.
+
 ###map(iterator)
+
+Produce a new object with return values.
 
 ##I/O
 
 ###mkdir(name, [callback])
 
-Create a directory named `name` in the target.
+Create a directory named `name` in the target directory.
 
 ###rename(name, [callback])
 
@@ -184,7 +188,9 @@ If the target is a **file**, get the content of the target.
 
 Append `data` to the target file.
 
-If the target does not exists. Create a new file with `data`.
+If the target is a **directory**, create a new directory named `data` in the target.
+
+If the target is a **file**, append `data` to the target.
 
 ###content([data], [callback])
 
