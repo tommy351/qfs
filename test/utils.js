@@ -1,5 +1,4 @@
-var utils = require('../lib/utils'),
-  should = require('should');
+var utils = require('../lib/utils');
 
 describe('Utilities', function(){
   it('isArray()', function(done){
