@@ -2,7 +2,7 @@
 
 File I/O in jQuery way.
 
-#Download
+#Install
 
 <!--
 
@@ -18,6 +18,12 @@ or clone the repository from [Github](https://github.com/tommy351/qfs):
 
 ```
 $ git clone git://github.com/tommy351/qfs.git
+```
+
+#Test
+
+```
+make test
 ```
 
 #Example
