@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "File I/O in jQuery way",
   "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/tommy351/qfs.git"
@@ -14,6 +17,10 @@
     "url": "http://github.com/tommy351/qfs/raw/master/LICENSE"
   },
   "dependencies": {
-    "async": ""
+    "async": "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
   }
 }
