@@ -4,13 +4,11 @@ File I/O in jQuery way.
 
 #Install
 
-You can download it from NPM:
-
 ```
 $ npm install qfs
 ```
 
-or clone the repository from [Github](https://github.com/tommy351/qfs):
+Or clone the repository on [Github](https://github.com/tommy351/qfs):
 
 ```
 $ git clone git://github.com/tommy351/qfs.git
