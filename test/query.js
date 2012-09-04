@@ -1,5 +1,4 @@
 var qfs = require('..'),
-  path = require('path'),
   dirname = __dirname,
   filename = __filename;
 
